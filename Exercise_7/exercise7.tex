@@ -1,0 +1,153 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.85in,left=1.30in,footskip=0.75in]{geometry}
+\usepackage[titletoc,page]{appendix}
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{siunitx}%Questo serve a caricare il pacchetto delle unità di misura del sistema internazionale%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+
+
+\usepackage{keyval}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{authblk}
+%\usepackage{hyperref}
+
+
+\usepackage[lofdepth,lotdepth]{subfig}
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+% Text layout
+%\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2009}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+\begin{document}
+\vspace*{0.30in}
+
+\begin{flushleft}
+{\Large
+\textbf\newline{\textbf{Master Equation for a chemical reaction}}
+}
+\newline
+% Insert Author names, affiliations and corresponding author email.
+\\
+Lorenzo Maria Perrone\textsuperscript{1, *}
+%Name2 Surname\textsuperscript{2,\textpilcrow},
+%Name3 Surname\textsuperscript{2,\textcurrency a},
+%Name4 Surname\textsuperscript{2,\ddag},
+%Name5 Surname\textsuperscript{2,\ddag},
+%Name6 Surname\textsuperscript{2,\Yinyang},
+%Name7 Surname\textsuperscript{3,*,\Yinyang}
+\\
+\bf{1} Department of Physics, EPFL
+\\
+%\bf{2} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+%\\
+%\bf{3} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+%\\
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+%\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+%\ddag These authors also contributed equally to this work.
+
+% Current address notes
+%\textcurrency a Insert current address of first author with an address update
+% \textcurrency b Insert current address of second author with an address update
+% \textcurrency c Insert current address of third author with an address update
+
+% Deceased author note
+%\dag Deceased
+
+% Group/Consortium Author Note
+%\textpilcrow Insert Collaborative Author line here
+
+* E-mail: lorenzo.perrone@epfl.ch
+\end{flushleft}
+
+
+\section{Exercise 4: Master equation for a chemical reaction}
+
+We attach below the code used to compute the derivatives of the generating function (called \textbf{H} in what follows).\\
+An array of values for $\alpha, \beta$ has been chosen in a range which seems compatible with the hypotheses of small fluxes. It has been noted that values of one parameter of the order 1E-4 or 1E-5 do not differ sensibly from the same computation in the 1E-3 order of magnitude. Moreover, the quantity we have defined as \textit{fluctuation} does not seem to be a function of the ratio of the parameters, but instead a function of each of them individually. This makes our problem bi-dimensional.\\
+
+The definition of the fluctuation is:
+
+\begin{equation}
+\delta(\alpha, \beta) = \frac{\sqrt{\sigma_n^2}}{\langle n \rangle}
+\end{equation}
+
+The smallest fluctuation is found to be $\delta \sim 0.44$ and a realization for this value is, for example, $\beta = 9.82$, $\alpha = 0.03$.
+
+\begin{lstlisting}
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 12 15:05:56 2017
+
+@author: LorenzoLMP
+"""
+
+from pylab import *  
+from scipy import * 
+from scipy import special
+from scipy import misc
+
+
+
+def H(z, alpha, beta):
+    l = len(alpha);
+    p1 = ((z+1)/2)**((1-2*beta)/2)
+    p2 = special.iv(2*beta-1,sqrt(8*ones(l)*alpha*(z+1)))
+    p3 = special.iv(2*beta-1,sqrt(16*ones(l)*alpha))
+    return p1*p2/p3
+
+N = 1000
+alpha = logspace(-3,1,N)
+beta = logspace(-3,1,N)    
+    
+mean_val = zeros((N,N))
+variance = zeros((N,N))
+for i in range(N):
+    mean_val[i][:] = misc.derivative(H, 1, dx=1e-10, n=1, args=(alpha,beta[i]))
+    variance[i][:] = sqrt(misc.derivative(H, 1, dx=1e-6, n=2, args=(alpha,beta[i])) 
+    + mean_val[i][:] - mean_val[i][:]**2)
+
+print(mean_val)
+
+
+fluct = divide(variance, mean_val)
+
+print('nonzero', nonzero(fluct[where( fluct<0.1 )]))
+print(fluct[where( fluct<0.1 )])
+
+\end{lstlisting}
+
+\end{document}
