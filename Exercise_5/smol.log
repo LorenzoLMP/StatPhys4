@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  13 APR 2017 09:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  30 MAR 2017 10:13
 entering extended mode
-**exercise7.tex
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.tex
+**smol.tex
+(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\smol\smol.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1165,7 +1165,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip63
 \sf@bottom=\skip64
 )
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.aux)
+(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\smol\smol.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
@@ -1187,14 +1187,14 @@ LaTeX Font Info:    ... okay on input line 47.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(93.95122pt, 428.1986pt, 92.14519pt)
+* h-part:(L,W,R)=(36.135pt, 486.01482pt, 92.14519pt)
 * v-part:(T,H,B)=(61.42993pt, 638.14268pt, 95.39737pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=379.4175pt
 * \textheight=632.36249pt
-* \oddsidemargin=21.68123pt
-* \evensidemargin=21.68123pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
 * \topmargin=-47.84006pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1327,58 +1327,316 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count282
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 102--103
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 105--106
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (67.34715pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (73.91722pt too wide) in paragraph at lines 109--110
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.06688pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.05736pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (67.34715pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.76756pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.62743pt too wide) in paragraph at lines 126--127
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.62743pt too wide) in paragraph at lines 129--130
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 138--139
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (152.75804pt too wide) in paragraph at lines 144--145
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 149--150
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (47.63695pt too wide) in paragraph at lines 156--157
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.48729pt too wide) in paragraph at lines 161--162
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.76756pt too wide) in paragraph at lines 163--164
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (100.1975pt too wide) in paragraph at lines 164--165
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.05736pt too wide) in paragraph at lines 165--166
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (100.1975pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[2]
+Overfull \hbox (185.60838pt too wide) in paragraph at lines 183--184
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 186--187
+[][][][][] 
+ []
+
+
+Overfull \hbox (87.05736pt too wide) in paragraph at lines 187--188
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.76756pt too wide) in paragraph at lines 188--189
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.48729pt too wide) in paragraph at lines 189--190
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (139.6179pt too wide) in paragraph at lines 139--140
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 202--203
+[][][][][] 
  []
 
 
-Overfull \hbox (165.89818pt too wide) in paragraph at lines 140--141
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 207--208
+[][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 148.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 148.
- [2]
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.aux) ) 
+Overfull \hbox (41.06688pt too wide) in paragraph at lines 223--224
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (67.34715pt too wide) in paragraph at lines 225--226
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.49681pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[3]
+Overfull \hbox (152.75804pt too wide) in paragraph at lines 251--252
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (113.33763pt too wide) in paragraph at lines 256--257
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.06688pt too wide) in paragraph at lines 263--264
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.48729pt too wide) in paragraph at lines 267--268
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.76756pt too wide) in paragraph at lines 269--270
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (100.1975pt too wide) in paragraph at lines 270--271
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.05736pt too wide) in paragraph at lines 271--272
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (100.1975pt too wide) in paragraph at lines 272--273
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[4]
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 292--293
+[][][][][] 
+ []
+
+
+Overfull \hbox (100.1975pt too wide) in paragraph at lines 293--294
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 305--307
+[][][][][] 
+ []
+
+
+Overfull \hbox (119.9077pt too wide) in paragraph at lines 310--312
+[][][][][] 
+ []
+
+[5]
+Overfull \hbox (80.48729pt too wide) in paragraph at lines 332--333
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.76756pt too wide) in paragraph at lines 333--334
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (47.63695pt too wide) in paragraph at lines 334--335
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.49681pt too wide) in paragraph at lines 348--349
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (8.21654pt too wide) in paragraph at lines 351--352
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<./serf1.png, id=25, 526.96875pt x 395.22656pt>
+File: ./serf1.png Graphic file (type png)
+ <use ./serf1.png>
+Package pdftex.def Info: ./serf1.png used on input line 357.
+(pdftex.def)             Requested size: 341.47342pt x 256.11626pt.
+
+<./prob_remaining.pdf, id=26, 597.23125pt x 845.1575pt>
+File: ./prob_remaining.pdf Graphic file (type pdf)
+
+<use ./prob_remaining.pdf>
+Package pdftex.def Info: ./prob_remaining.pdf used on input line 364.
+(pdftex.def)             Requested size: 379.4175pt x 536.92697pt.
+ <./profile.pdf, id=27, 597.23125pt x 845.1575pt>
+File: ./profile.pdf Graphic file (type pdf)
+
+<use ./profile.pdf>
+Package pdftex.def Info: ./profile.pdf used on input line 371.
+(pdftex.def)             Requested size: 379.4175pt x 536.92697pt.
+ <./different_times.pdf, id=28, 597.23125pt x 845.1575pt>
+File: ./different_times.pdf Graphic file (type pdf)
+
+<use ./different_times.pdf>
+Package pdftex.def Info: ./different_times.pdf used on input line 378.
+(pdftex.def)             Requested size: 379.4175pt x 536.92697pt.
+
+<./arrhenius05.pdf, id=29, 597.23125pt x 845.1575pt>
+File: ./arrhenius05.pdf Graphic file (type pdf)
+ <use ./arrhenius05.pdf>
+Package pdftex.def Info: ./arrhenius05.pdf used on input line 385.
+(pdftex.def)             Requested size: 379.4175pt x 536.92697pt.
+
+<./arrhenius2.pdf, id=30, 597.23125pt x 845.1575pt>
+File: ./arrhenius2.pdf Graphic file (type pdf)
+ <use ./arrhenius2.pdf>
+Package pdftex.def Info: ./arrhenius2.pdf used on input line 392.
+(pdftex.def)             Requested size: 379.4175pt x 536.92697pt.
+
+[6] [7 <C:/Users/LorenzoLMP/Documents/EPFL/StatIV/smol/serf1.png (PNG copy)>]
+[8 <C:/Users/LorenzoLMP/Documents/EPFL/StatIV/smol/prob_remaining.pdf>]
+[9 <C:/Users/LorenzoLMP/Documents/EPFL/StatIV/smol/profile.pdf>] [10 <C:/Users/
+LorenzoLMP/Documents/EPFL/StatIV/smol/different_times.pdf>] [11 <C:/Users/Loren
+zoLMP/Documents/EPFL/StatIV/smol/arrhenius05.pdf>] [12 <C:/Users/LorenzoLMP/Doc
+uments/EPFL/StatIV/smol/arrhenius2.pdf>]
+(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\smol\smol.aux) ) 
 Here is how much of TeX's memory you used:
- 27019 strings out of 493921
- 580780 string characters out of 3147266
- 640837 words of memory out of 3000000
- 29872 multiletter control sequences out of 15000+200000
- 10956 words of font info for 42 fonts, out of 3000000 for 9000
+ 27045 strings out of 493921
+ 581209 string characters out of 3147266
+ 661876 words of memory out of 3000000
+ 29895 multiletter control sequences out of 15000+200000
+ 11215 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,6n,55p,534b,1523s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exercise7.pdf (2 pages, 105885 bytes).
+ 56i,6n,55p,418b,1527s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on smol.pdf (12 pages, 254912 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 230 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

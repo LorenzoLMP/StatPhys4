@@ -1,5 +1,5 @@
 \documentclass[11pt,letterpaper]{article}
-\usepackage[top=0.85in,left=1.30in,footskip=0.75in]{geometry}
+\usepackage[top=0.85in,left=2.00in,footskip=0.75in]{geometry}
 \usepackage[titletoc,page]{appendix}
 % Use adjustwidth environment to exceed column width (see example table in text)
 \usepackage{changepage}
@@ -49,7 +49,7 @@
 
 \begin{flushleft}
 {\Large
-\textbf\newline{\textbf{Master Equation for a chemical reaction}}
+\textbf\newline{\textbf{Black Scholes Formula}}
 }
 \newline
 % Insert Author names, affiliations and corresponding author email.
@@ -93,61 +93,66 @@ Lorenzo Maria Perrone\textsuperscript{1, *}
 * E-mail: lorenzo.perrone@epfl.ch
 \end{flushleft}
 
-
-\section{Exercise 4: Master equation for a chemical reaction}
-
-We attach below the code used to compute the derivatives of the generating function (called \textbf{H} in what follows).\\
-An array of values for $\alpha, \beta$ has been chosen in a range which seems compatible with the hypotheses of small fluxes. It has been noted that values of one parameter of the order 1E-4 or 1E-5 do not differ sensibly from the same computation in the 1E-3 order of magnitude. Moreover, the quantity we have defined as \textit{fluctuation} does not seem to be a function of the ratio of the parameters, but instead a function of each of them individually. This makes our problem bi-dimensional.\\
-
-The definition of the fluctuation is:
-
-\begin{equation}
-\delta(\alpha, \beta) = \frac{\sqrt{\sigma_n^2}}{\langle n \rangle}
-\end{equation}
-
-The smallest fluctuation is found to be $\delta \sim 0.44$ and a realization for this value is, for example, $\beta = 9.82$, $\alpha = 0.03$.
-
 \begin{lstlisting}
+
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 12 15:05:56 2017
+Created on Wed Mar 15 15:16:20 2017
 
 @author: LorenzoLMP
 """
-
 from pylab import *  
 from scipy import * 
-from scipy import special
-from scipy import misc
+from scipy.stats import norm
 
+def d1(x, c, s, r, tau, t):
+    return (log(x/c) + (r + 0.5*s**2)*(tau-t))/(s*sqrt(tau-t))
 
-
-def H(z, alpha, beta):
-    l = len(alpha);
-    p1 = ((z+1)/2)**((1-2*beta)/2)
-    p2 = special.iv(2*beta-1,sqrt(8*ones(l)*alpha*(z+1)))
-    p3 = special.iv(2*beta-1,sqrt(16*ones(l)*alpha))
-    return p1*p2/p3
-
-N = 1000
-alpha = logspace(-3,1,N)
-beta = logspace(-3,1,N)    
+def d2(x, c, s, r, tau, t):
+    return (log(x/c) + (r - 0.5*s**2)*(tau-t))/(s*sqrt(tau-t))
     
-mean_val = zeros((N,N))
-variance = zeros((N,N))
-for i in range(N):
-    mean_val[i][:] = misc.derivative(H, 1, dx=1e-10, n=1, args=(alpha,beta[i]))
-    variance[i][:] = sqrt(misc.derivative(H, 1, dx=1e-6, n=2, args=(alpha,beta[i])) 
-    + mean_val[i][:] - mean_val[i][:]**2)
+def w(x, c, r, t, tau, d1, d2):
+    return x*norm.cdf(d1) - c*exp(r*(t-tau))*norm.cdf(d2)
 
-print(mean_val)
-
-
-fluct = divide(variance, mean_val)
-
-print('nonzero', nonzero(fluct[where( fluct<0.1 )]))
-print(fluct[where( fluct<0.1 )])
+#DEFINITION OF PARAMETERS
+c = 20
+s = sqrt(0.2)
+r = 1
+tau = 1
+t1 = 0.1
+t2 = 0.5
+t3 = 0.8
+t4 = 0.99
+    
+rc('font', size=14)
+xlabel(r' $X(t)$ [$ \$ $]')
+ylabel(r'Option price $w(X,t)$ [$ \$ $]')
+minorticks_on()
+grid(which='major')
+#yscale('log')
+#xscale('log')
+title("Option Price vs Stock Price")
+xdata = linspace(0.1, 40, 30)
+xxdata = linspace(0.1, 40, 200)
+xxxdata = linspace(20, 40, 100)
+plot(xdata, w(xdata, c, r, t1, tau, d1(xdata, c, s, r, tau, t1), d2(xdata, c, s, r, tau, t1)), linestyle='None', marker= 'o', color="red", label='t1=0.1')
+plot(xdata, w(xdata, c, r, t2, tau, d1(xdata, c, s, r, tau, t2), d2(xdata, c, s, r, tau, t2)), linestyle='None', marker= '^', color="b",label='t2=0.5')
+plot(xdata, w(xdata, c, r, t4, tau, d1(xdata, c, s, r, tau, t4), d2(xdata, c, s, r, tau, t4)), linestyle='None', marker= 'd', color="orange", label='t3=0.8')
+plot(xdata, w(xdata, c, r, t3, tau, d1(xdata, c, s, r, tau, t3), d2(xdata, c, s, r, tau, t3)), linestyle='None', marker= 's', color="g",label='t4=0.99')
+plot(xxdata, xxdata, linestyle='-',color="k", label='max. option')
+plot(xxxdata, xxxdata-c, linestyle='--',color="k", label='min. option')
+legend(loc='upper left')
+savefig('black_scholes.png', dpi=600)
+show()
 
 \end{lstlisting}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./black_scholes}
+\caption{Option price as a function of stock price for different times. Maturity $ t^*$ set to 1.}
+\label{fig:black_scholes}
+\end{figure}
+
 
 \end{document}

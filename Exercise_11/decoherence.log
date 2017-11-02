@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  13 APR 2017 09:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  18 MAY 2017 10:25
 entering extended mode
-**exercise7.tex
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.tex
+**decoherence.tex
+(E:\EPFL\StatIV\ex11\decoherence.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1165,7 +1165,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip63
 \sf@bottom=\skip64
 )
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.aux)
+(E:\EPFL\StatIV\ex11\decoherence.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
@@ -1187,14 +1187,14 @@ LaTeX Font Info:    ... okay on input line 47.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(93.95122pt, 428.1986pt, 92.14519pt)
+* h-part:(L,W,R)=(72.26999pt, 449.87982pt, 92.14519pt)
 * v-part:(T,H,B)=(61.42993pt, 638.14268pt, 95.39737pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=379.4175pt
 * \textheight=632.36249pt
-* \oddsidemargin=21.68123pt
-* \evensidemargin=21.68123pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
 * \topmargin=-47.84006pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1326,59 +1326,82 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count282
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+
+Overfull \hbox (41.06688pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.64647pt too wide) in paragraph at lines 117--118
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (93.62743pt too wide) in paragraph at lines 120--121
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (139.6179pt too wide) in paragraph at lines 139--140
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (47.63695pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (165.89818pt too wide) in paragraph at lines 140--141
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (1.64647pt too wide) in paragraph at lines 130--131
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 148.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 148.
- [2]
-(C:\Users\LorenzoLMP\Documents\EPFL\StatIV\exercise7\exercise7.aux) ) 
+Overfull \hbox (257.87914pt too wide) in paragraph at lines 154--155
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (185.60838pt too wide) in paragraph at lines 155--156
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[2] <./lind_lore.png, id=18, 462.528pt x 346.896pt>
+File: ./lind_lore.png Graphic file (type png)
+ <use ./lind_lore.png>
+Package pdftex.def Info: ./lind_lore.png used on input line 184.
+(pdftex.def)             Requested size: 379.4175pt x 284.5783pt.
+
+Overfull \hbox (20.42361pt too wide) in paragraph at lines 189--190
+[]\OT1/cmr/m/n/10.95 The code can be ac-cessed at \OT1/cmr/m/sc/10.95 https://g
+ithub.com/LorenzoLMP/StatPhys4\OT1/cmr/m/n/10.95 . 
+ []
+
+[3 <E:/EPFL/StatIV/ex11/lind_lore.png>] (E:\EPFL\StatIV\ex11\decoherence.aux) )
+ 
 Here is how much of TeX's memory you used:
- 27019 strings out of 493921
- 580780 string characters out of 3147266
- 640837 words of memory out of 3000000
- 29872 multiletter control sequences out of 15000+200000
- 10956 words of font info for 42 fonts, out of 3000000 for 9000
+ 27013 strings out of 493921
+ 580471 string characters out of 3147266
+ 661818 words of memory out of 3000000
+ 29867 multiletter control sequences out of 15000+200000
+ 10911 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,6n,55p,534b,1523s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exercise7.pdf (2 pages, 105885 bytes).
+ 56i,6n,55p,481b,1525s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on decoherence.pdf (3 pages, 117561 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

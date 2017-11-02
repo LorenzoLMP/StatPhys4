@@ -1,5 +1,5 @@
 \documentclass[11pt,letterpaper]{article}
-\usepackage[top=0.85in,left=1.30in,footskip=0.75in]{geometry}
+\usepackage[top=0.85in,left=2.00in,footskip=0.75in]{geometry}
 \usepackage[titletoc,page]{appendix}
 % Use adjustwidth environment to exceed column width (see example table in text)
 \usepackage{changepage}
@@ -49,7 +49,7 @@
 
 \begin{flushleft}
 {\Large
-\textbf\newline{\textbf{Master Equation for a chemical reaction}}
+\textbf\newline{\textbf{Optical tweezers - Kramers escape rate}}
 }
 \newline
 % Insert Author names, affiliations and corresponding author email.
@@ -93,61 +93,12 @@ Lorenzo Maria Perrone\textsuperscript{1, *}
 * E-mail: lorenzo.perrone@epfl.ch
 \end{flushleft}
 
-
-\section{Exercise 4: Master equation for a chemical reaction}
-
-We attach below the code used to compute the derivatives of the generating function (called \textbf{H} in what follows).\\
-An array of values for $\alpha, \beta$ has been chosen in a range which seems compatible with the hypotheses of small fluxes. It has been noted that values of one parameter of the order 1E-4 or 1E-5 do not differ sensibly from the same computation in the 1E-3 order of magnitude. Moreover, the quantity we have defined as \textit{fluctuation} does not seem to be a function of the ratio of the parameters, but instead a function of each of them individually. This makes our problem bi-dimensional.\\
-
-The definition of the fluctuation is:
-
-\begin{equation}
-\delta(\alpha, \beta) = \frac{\sqrt{\sigma_n^2}}{\langle n \rangle}
-\end{equation}
-
-The smallest fluctuation is found to be $\delta \sim 0.44$ and a realization for this value is, for example, $\beta = 9.82$, $\alpha = 0.03$.
-
-\begin{lstlisting}
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 12 15:05:56 2017
-
-@author: LorenzoLMP
-"""
-
-from pylab import *  
-from scipy import * 
-from scipy import special
-from scipy import misc
-
-
-
-def H(z, alpha, beta):
-    l = len(alpha);
-    p1 = ((z+1)/2)**((1-2*beta)/2)
-    p2 = special.iv(2*beta-1,sqrt(8*ones(l)*alpha*(z+1)))
-    p3 = special.iv(2*beta-1,sqrt(16*ones(l)*alpha))
-    return p1*p2/p3
-
-N = 1000
-alpha = logspace(-3,1,N)
-beta = logspace(-3,1,N)    
-    
-mean_val = zeros((N,N))
-variance = zeros((N,N))
-for i in range(N):
-    mean_val[i][:] = misc.derivative(H, 1, dx=1e-10, n=1, args=(alpha,beta[i]))
-    variance[i][:] = sqrt(misc.derivative(H, 1, dx=1e-6, n=2, args=(alpha,beta[i])) 
-    + mean_val[i][:] - mean_val[i][:]**2)
-
-print(mean_val)
-
-
-fluct = divide(variance, mean_val)
-
-print('nonzero', nonzero(fluct[where( fluct<0.1 )]))
-print(fluct[where( fluct<0.1 )])
-
-\end{lstlisting}
+\section{Axial potential V(z)}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.9\linewidth]{./V(z)}
+\caption{Potential profile for longitudinal force.}
+\label{fig:potential}
+\end{figure}
 
 \end{document}
